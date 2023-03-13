@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Atividade Avaliativa 09/03</title>
+  </head>
+  <body>
+    <font color=purple>
+      <h1 align=center>Html</h1>
+    </font>
+      <p>HTML é uma <strong>linguagem de marcação</strong> utilizada na construção de páginas web. HTML (Hyper Tex markup language) que significa <u>linguagem de marcação de                   hipertexto</u></p> <hr color= purple size=6>
+    <font color= blue>
+      <h2 align=left>Aplicações Estáticas e Dinâmicas</h2>
+    </font>
+      <p>Site estático <strong>não permite mudanças ou reformulações</strong> significativas de conteúdo sem que haja alterações no seu código fonte. O dinâmico <u>retorna dados</u>            diferentes para uma mesma URL.</p> <hr color=blue size=6>
+    <font color=red> 
+      <h3 align=right>Java Script</h3>
+    </font>
+      <p>Quando você clica em um menu do site, acontece interações e <strong>isso é desenvolvido em JS.</strong></p> 
+      <hr color=red size=6>
+    <h2>Lista não ordenada:</h2>
+      <ul>
+        <li>HTML</li>
+        <li>Java Script</li>
+        <li>Aplicação Web</li>
+        <li>Estático</li>
+        <li>Dinâmico</li>
+      </ul>
+    <h2>Lista Ordenada:</h2>
+      <ol>
+        <li>HTML</li>
+        <li>Java Script</li>
+        <li>Aplicação Web</li>
+        <li>Estático</li>
+        <li>DInâmico</li>
+  </body>
+</html>

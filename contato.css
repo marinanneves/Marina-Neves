@@ -1,0 +1,35 @@
+body{
+    padding:0;
+    margin: 0;
+}
+header{
+    background: linear-gradient(to right, rgb(240, 190, 234), rgb(250, 64, 226));
+    padding: 20px;
+}
+
+#logo{
+    border-radius:10px;
+}
+
+.titulo-principal{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-30%, -15%);
+    font-size: 35px;
+    font-family: 'KG Blank Space Solid';
+}
+
+@font-face {
+    font-family: 'KGBlankSpaceSolid';
+    src: url(KGBlankSpaceSolid.ttf) format('opentype');
+}
+
+main{
+    width: 940px;
+    maring: auto;
+}
+
+form{
+    margin: 40px 0; /*margem superior e inferior de 40 px, para os lados zero*/
+}

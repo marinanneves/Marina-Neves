@@ -1,0 +1,19 @@
+fieldset{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 15px;
+    height: auto;
+    width: auto;
+    border-radius:20px;
+    background: rgb(11,24,133);
+    background: linear-gradient(90deg, rgba(11,24,133,1) 0%, rgba(56,56,167,1) 54%, rgba(255,255,255,1) 100%);
+    border-color: rgb(0, 0, 0);
+    color: white;
+    border: 10px;
+    
+}
+
+body{
+    background: rgb(11,24,133);
+    background: linear-gradient(90deg, rgba(11,24,133,1) 0%, rgba(56,56,167,1) 54%, rgba(255,255,255,1) 100%);
+}

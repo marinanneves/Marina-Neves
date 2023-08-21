@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(69, 112, 255);
+}
+
+fieldset{
+    margin-left: 460px;
+    margin-top: 200px;
+    height: auto;
+    width: 500px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    border-color: black;
+}
+
+legend{
+    text-align: center;
+    text-shadow: -3px 2px rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    font-weight: 800;
+    background-color: rgb(9, 9, 71);
+    border-radius: 4px;
+    width: 30%;
+}
+
+input{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 30px;
+    height: 5px;
+    border-color: aliceblue;
+    border-style: ;
+}

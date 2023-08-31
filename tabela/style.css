@@ -1,0 +1,56 @@
+h1{
+    font-size: 30;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.coluna1{
+    background-color: rgb(210, 131, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.coluna2{
+    background-color: rgb(255, 146, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.coluna3{           
+    background-color: rgb(210, 131, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.coluna4{
+    background-color: rgb(255, 146, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.coluna5{
+    background-color: rgb(210, 131, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.coluna6{
+    background-color: rgb(255, 146, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(255, 213, 255);
+}
+table{
+    width: 500px;
+    height: 250px;
+    border-color: rgb(0, 0, 0);
+ 
+}
+.linha1{
+    color: rgb(255, 255, 255);
+}
+.linha2{
+    color: black;
+}
+.linha3{
+    color: white;
+}
+.linha4{
+    color: black;
+}
+.linha5{
+    color: white;
+}

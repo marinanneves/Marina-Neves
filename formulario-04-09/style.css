@@ -1,0 +1,43 @@
+fieldset{
+    background-color: rgb(200, 148, 253);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: black 3px;
+    border-radius: 7px;
+    width: 350px;
+    height: 850px;
+    margin-left: 300px;
+}
+
+body{
+    background: rgb(227,232,255);
+    background: radial-gradient(circle, rgba(227,232,255,1) 0%, rgba(223,181,255,1) 43%, rgba(153,104,255,1) 100%);
+}
+
+input{
+    margin-top: -5px;
+}
+
+.apagar{
+    text-align: center;
+    background-color: rgb(109, 60, 169);;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+
+.cadastro{
+    text-align: center;
+    background-color: rgb(109, 60, 169);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+

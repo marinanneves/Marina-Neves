@@ -1,0 +1,60 @@
+import tkinter as tk
+from tkinter import messagebox
+import sqlite3
+
+class Cadastro:
+    def __init__(self, tela):
+        self.tela = tela
+        titulo = "Cadastro de cliente"
+        self.titulo = titulo
+        self.tela.title(self.titulo)
+        self.tela.geometry("300x200")
+        self.conn = sqlite3.connect("cadastro.db")
+        self.cursor = self.conn.cursor()
+        self.cursor.execute('''CREATE TABLE IF NOT EXISTS login (
+                            id INTEGER PRIMARY KEY,
+                            nome TEXT,
+                            email TEXT,
+                            senha VARCHAR
+        )''')
+
+        self.nomelabel = tk.Label(tela, text="Nome completo")
+        self.nomelabel.pack()
+        self.nomeentry = tk.Entry(tela, width=30)
+        self.nomeentry.pack()
+        self.emaillabel = tk.Label(tela, text="Email")
+        self.emaillabel.pack()
+        self.emailentry = tk.Entry(tela, width=30)
+        self.emailentry.pack()
+        self.senhalabel = tk.Label(tela, text="Senha")
+        self.senhalabel.pack()
+        self.senhaentry = tk.Entry(tela, width=30, show="*")
+        self.senhaentry.pack()
+
+        # Correção do botão
+        self.cadastrarbutton = tk.Button(tela, text="Cadastrar", command=self.cadastrar)
+        self.cadastrarbutton.pack()
+
+    def cadastrar(self):
+        nome = self.nomeentry.get()
+        email = self.emailentry.get()
+        senha = self.senhaentry.get()
+
+        self.cursor.execute("SELECT * FROM login WHERE nome=? AND email=? AND senha=?", (nome, email, senha))
+        retorno = self.cursor.fetchone()
+
+        if retorno:
+            messagebox.showerror(self.titulo, "Esse usuário já está cadastrado no sistema!")
+        else:
+            # Correção das condições de verificação
+            if len(email.strip()) < 15 or len(senha.strip()) < 5 or len(nome.strip()) < 10:
+                messagebox.showerror(self.titulo, "Os campos obrigatórios não estão preenchidos corretamente")
+            else:
+                self.cursor.execute("INSERT INTO login (nome, email, senha) VALUES (?, ?, ?)", (nome, email, senha))
+                self.conn.commit()
+                messagebox.showinfo(self.titulo, "Cadastro realizado com sucesso!")
+
+if __name__ == "__main__":
+    tela = tk.Tk()
+    cliente = Cadastro(tela)
+    tela.mainloop()
